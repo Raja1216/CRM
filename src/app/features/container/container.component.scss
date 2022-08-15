@@ -1,0 +1,15 @@
+
+.head { grid-area: header; }
+.side { grid-area: side; }
+.main-content { grid-area: main; }
+
+
+.wrapper{
+  height: 100vh;
+display: grid;
+grid-template-areas:
+  'header header header header header header header header header header header header header header'
+  'side main main main main main main main main main main main main main';
+
+}
+

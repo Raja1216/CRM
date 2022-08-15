@@ -1,0 +1,120 @@
+<div class="containt">
+  <div class="d-flex">
+    <div class="breadcrums">
+      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Account</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="add-btn">
+
+      <button type="button" class=" add-button btn btn-outline-warning" (click)="openModal('Add',{})"><i class="fas fa-plus"></i> | Add Account</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="main-content">
+
+        <div class="card-head d-flex">
+            <h2 class="page-header">Account </h2>
+          <div class="search-box-div">
+           <app-searchbar></app-searchbar>
+          </div>
+        </div>
+        <div>
+
+          <ul class="responsive-table">
+            <li class="table-header" >
+              <div class="col">Job Id</div>
+              <div class="col">Customer Name</div>
+              <div class="col">Amount Due</div>
+              <div class="col">Payment Status</div>
+              <div class="col table-more-head">More</div>
+            </li>
+            <li class="table-row cursor-pointer" (click)="goToDetails(1)">
+              <div class="col" data-label="Job Id">42235</div>
+              <div class="col" data-label="Customer Name">John Doe</div>
+              <div class="col" data-label="Amount">$350</div>
+              <div class="col" data-label="Payment Status">Pending</div>
+             <div class="col table-more" data-label="more" ><i class="fas fa-trash danger"></i> <i class="fas fa-edit success"></i></div>
+            </li>
+            <li class="table-row  cursor-pointer">
+              <div class="col" data-label="Job Id">42442</div>
+              <div class="col" data-label="Customer Name">Jennifer Smith</div>
+              <div class="col" data-label="Amount">$220</div>
+               <div class="col" data-label="Payment Status">Pending</div>
+             <div class="col table-more" data-label="more" ><i class="fas fa-trash danger"></i> <i class="fas fa-edit success"></i></div>
+
+
+            </li>
+            <li class="table-row cursor-pointer">
+              <div class="col" data-label="Job Id">42257</div>
+              <div class="col" data-label="Customer Name">John Smith</div>
+              <div class="col" data-label="Amount">$341</div>
+               <div class="col" data-label="Payment Status">Pending</div>
+             <div class="col table-more" data-label="more" ><i class="fas fa-trash danger"></i> <i class="fas fa-edit success"></i></div>
+
+
+            </li>
+            <li class="table-row cursor-pointer">
+              <div class="col" data-label="Job Id">42311</div>
+              <div class="col" data-label="Customer Name">John Carpenter</div>
+              <div class="col" data-label="Amount">$115</div>
+               <div class="col" data-label="Payment Status">Pending</div>
+             <div class="col table-more" data-label="more" ><i class="fas fa-trash danger"></i> <i class="fas fa-edit success"></i></div>
+
+
+            </li>
+            <li class="table-row cursor-pointer">
+              <div class="col" data-label="Job Id">42311</div>
+              <div class="col" data-label="Customer Name">John Carpenter</div>
+              <div class="col" data-label="Amount">$115</div>
+               <div class="col" data-label="Payment Status">Pending</div>
+             <div class="col table-more" data-label="more" ><i class="fas fa-trash danger"></i> <i class="fas fa-edit success"></i></div>
+
+
+            </li>
+            <li class="table-row cursor-pointer">
+              <div class="col" data-label="Job Id">42311</div>
+              <div class="col" data-label="Customer Name">John Carpenter</div>
+              <div class="col" data-label="Amount">$115</div>
+               <div class="col" data-label="Payment Status">Pending</div>
+             <div class="col table-more" data-label="more" ><i class="fas fa-trash danger"></i> <i class="fas fa-edit success"></i></div>
+
+
+            </li>
+            <li class="table-row cursor-pointer">
+              <div class="col" data-label="Job Id">42311</div>
+              <div class="col" data-label="Customer Name">John Carpenter</div>
+              <div class="col" data-label="Amount">$115</div>
+               <div class="col" data-label="Payment Status">Pending</div>
+             <div class="col table-more" data-label="more" ><i class="fas fa-trash danger"></i> <i class="fas fa-edit success"></i></div>
+
+
+            </li>
+            <li class="table-row cursor-pointer">
+              <div class="col" data-label="Job Id">42311</div>
+              <div class="col" data-label="Customer Name">John Carpenter</div>
+              <div class="col" data-label="Amount">$115</div>
+               <div class="col" data-label="Payment Status">Pending</div>
+             <div class="col table-more" data-label="more" ><i class="fas fa-trash danger"></i> <i class="fas fa-edit success"></i></div>
+
+
+            </li>
+            <li class="table-row cursor-pointer">
+              <div class="col" data-label="Job Id">42311</div>
+              <div class="col" data-label="Customer Name">John Carpenter</div>
+              <div class="col" data-label="Amount">$115</div>
+               <div class="col" data-label="Payment Status">Pending</div>
+             <div class="col table-more" data-label="more" ><i class="fas fa-trash danger"></i> <i class="fas fa-edit success"></i></div>
+
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

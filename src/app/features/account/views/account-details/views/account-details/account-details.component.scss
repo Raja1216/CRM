@@ -1,0 +1,215 @@
+.containt{
+  margin: 2rem;
+  .breadcrums{
+    margin-bottom: 1rem;
+  }
+}
+
+.details-content{
+  padding-left: 0;
+  margin: 2rem;
+  height: 36rem;
+  display: flex;
+
+.left-content{
+  padding: 10px;
+  .details-card{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+  .card-imges{
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    img{
+      width: 7rem;
+      margin-top: 1rem;
+    }
+  }
+  .card-details{
+    width: 100%;
+    height: 60%;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    label{
+      display: contents;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .span-end{
+      text-align: end;
+    }
+    .user-name{
+      width: 100%;
+      height: 15%;
+      text-align: center;
+      padding-top: 15px;
+    }
+    .user-code{
+      width: 100%;
+      height: 15%;
+      text-align: center;
+    }
+    .user-description{
+      display: flex;
+      gap: 15px;
+      width: 100%;
+      height: 25%;
+      padding:0 35px 0 35px;
+    }
+    .user-email{
+      display: flex;
+      gap: 15px;
+      width: 100%;
+      height: 15%;
+      padding:0 35px 0 35px;
+    }
+    .user-phone{
+      display: flex;
+      gap: 15px;
+      width: 100%;
+      height: 15%;
+      padding:0 35px 0 35px;
+    }
+    .user-adress{
+      display: flex;
+      gap: 15px;
+      width: 100%;
+      height: 15%;
+      padding:0 35px 0 35px;
+    }
+
+  }
+  .card-button{
+    width: 100%;
+    height: 14%;
+    text-align: center;
+    .status-button{
+      background: var(--color-success);
+      width: 10rem;
+      outline: none;
+      color: #ffffff;
+     &:hover{
+        outline: none;
+        border-color: var(--color-success);
+      }
+      &:focus{
+        outline: none;
+        border-color: var(--color-success);
+      }
+    }
+  }
+  }
+}
+
+
+
+  .right-content{
+    display: inline-block;
+    padding: 10px;
+    .contact-details{
+      height: 48%;
+      width: 100%;
+      display: inline-block;
+      padding: 10px 40px 15px 40px;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+
+    .label-primary{
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--color-primary);
+    }
+    .input-grp{
+      display: inline-block;
+      width: 100%;
+      height: 80%;
+      margin-top: 10px;
+      .input-grup{
+        display: flex;
+        margin-bottom: 20px;
+        height: 2rem;
+        label{
+          width:20% ;
+          padding-left:4rem ;
+          font-size: 15px;
+          font-weight: 600;
+        }
+        input{
+          width:70%;
+          border: 0;
+          background: var(--color-background);
+          border-radius: 5px;
+          height: 40px;
+          padding-left: 1.5rem;
+        }
+      }
+      .form-save-btn{
+        text-align: end;
+        margin-top: 4.8rem;
+        .form-button{
+          background: var(--color-danger);
+          color:white;
+        }
+      }
+    }
+    }
+    .address-details{
+      // border: 1px dashed palevioletred;
+      height: 48%;
+      width: 100%;
+      display: inline-block;
+      padding: 10px 40px 15px 40px;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+      .label-primary{
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: var(--color-primary);
+      }
+      .input-grp{
+        display: inline-block;
+        width: 100%;
+        height: 80%;
+        margin-top: 10px;
+        .input-grup{
+          display: flex;
+          margin-bottom: 20px;
+          height: 2rem;
+          label{
+            width:20% ;
+            padding-left:4rem ;
+            font-size: 15px;
+            font-weight: 600;
+          }
+          input{
+            width:70%;
+            border: 0;
+            background: var(--color-background);
+            border-radius: 5px;
+            height: 40px;
+            padding-left: 1.5rem;
+          }
+        }
+        .form-save-btn{
+          text-align: end;
+          margin-top: 2rem;
+          .form-button{
+            background: var(--color-danger);
+            color:white;
+          }
+        }
+      }
+    }
+  }
+}
+
