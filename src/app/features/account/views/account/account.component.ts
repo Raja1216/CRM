@@ -1,30 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { BsModalRef, BsModalService} from 'ngx-bootstrap/modal';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { AccountAddEditModalComponent } from '../modal/account-add-edit-modal/account-add-edit-modal.component';
 
 @Component({
   selector: 'app-account',
   templateUrl: './account.component.html',
-  styleUrls: ['./account.component.scss']
+  styleUrls: ['./account.component.scss'],
 })
 export class AccountComponent implements OnInit {
-  bsModalRef: BsModalRef | undefined;
-  constructor(
-    private _router: Router,
-    private modalService: BsModalService
-     ) { }
+  bsModalRef!: BsModalRef;
+  constructor(private _router: Router, private _modalService: BsModalService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  goToDetails(id:number){
-    this._router.navigate([`oms/account/${id}/account-details`], {
-    });
+  goToDetails(id: number) {
+    this._router.navigate([`oms/account/${id}/account-details`], {});
   }
-  openModal(action:string, data?:object | any){
-    console.log(action);
-    // this.bsModalRef = this.modalService.show(AccountAddEditModalComponent);
+  openModal(action: string, data?: object | any) {
+    this.bsModalRef = this._modalService.show(AccountAddEditModalComponent);
     // const modalOptions: ModalOptions = {
     //   initialState: {
     //     action: action,
@@ -41,5 +35,4 @@ export class AccountComponent implements OnInit {
     // this.bsModalRef.onHide?.subscribe((res) => {
     // });
   }
-
 }

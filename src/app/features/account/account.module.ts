@@ -6,8 +6,7 @@ import { AccountComponent } from './views/account/account.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AccountDetailsComponent } from './views/account-details/views/account-details/account-details.component';
 import { AccountAddEditModalComponent } from './views/modal/account-add-edit-modal/account-add-edit-modal.component';
-
-
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -19,6 +18,7 @@ import { AccountAddEditModalComponent } from './views/modal/account-add-edit-mod
     CommonModule,
     AccountRoutingModule,
     SharedModule,
-  ]
+    ModalModule.forRoot(),
+  ],
 })
-export class AccountModule { }
+export class AccountModule {}

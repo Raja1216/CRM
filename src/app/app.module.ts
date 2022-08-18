@@ -5,23 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { ContainerComponent } from './features/container/container.component';
-import { AccountModule } from './features/account/account.module';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ContainerComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SharedModule,
-    AccountModule,
-
-  ],
+  declarations: [AppComponent, ContainerComponent],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
-
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

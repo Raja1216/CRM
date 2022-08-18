@@ -1,44 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
 
-:root{
-   --color-primary: #7380ec;
-   --color-danger:#ff7782;
-   --color-success:#41f1b6;
-   --color-warning:#ffbb55;
-   --color-white:#fff;
-   --color-info-dark:#7d8da1;
-   --color-info-light:#dce1eb;
-   --color-dark:#363949;
-   --color-light:rgba(132,139,200,0.18);
-   --color-primary-variant:#111e88;
-   --color-dark-variant:#677483;
-   --color-background:#f6f6f9;
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --boredr-radius-2: 0.8rem;
+  --boredr-radius-3: 1.2rem;
 
-   --card-border-radius:2rem;
-   --border-radius-1:0.4rem;
-   --boredr-radius-2:0.8rem;
-   --boredr-radius-3:1.2rem;
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
 
-   --card-padding:1.8rem;
-   --padding-1:1.2rem;
+  --rad: 0.7rem;
+  --dur: 0.3s;
+  --font-fam: "Lato", sans-serif;
+  --height: 2rem;
+  --btn-width: 2rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
 
-
-
-   --rad: .7rem;
-   --dur: .3s;
-   --font-fam: 'Lato', sans-serif;
-   --height: 2rem;
-   --btn-width: 2rem;
-   --bez: cubic-bezier(0, 0, 0.43, 1.49);
-
-
-   --box-shadow:0 2rem 3rem var(--color-light);
+  --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   outline: 0;
@@ -47,63 +43,63 @@
   list-style: none;
   box-sizing: border-box;
 }
-body{
+body {
   height: 100vh;
   width: 100wh;
-  font-family: poppins,sans-serif;
+  font-family: poppins, sans-serif;
   font-size: 0.88rem;
   background: var(--color-background);
   user-select: none;
   overflow-x: hidden;
 }
-a{
+a {
   text-decoration: none;
   list-style: none;
   color: var(--color-dark);
 }
 
-h1{
+h1 {
   font-weight: 800;
   font-size: 1.8rem;
 }
-h2{
+h2 {
   font-size: 1.4rem;
 }
-h3{
+h3 {
   font-size: 0.87rem;
 }
-h4{
+h4 {
   font-size: 0.8rem;
 }
-h5{
+h5 {
   font-size: 0.77rem;
 }
 
-small{
+small {
   font-size: 0.75rem;
 }
 
-.text-muted{
-color: var(--color-info-dark);
+.text-muted {
+  color: var(--color-info-dark);
 }
 
-p{
+p {
   color: var(--color-dark-variant);
 }
-b{
+b {
   color: var(--color-dark);
 }
 
-.primary{
+.primary {
   color: var(--color-primary);
 }
-.danger{
+.danger {
   color: var(--color-danger);
 }
-.success{
+.success {
   color: var(--color-success);
 }
-.warning{
+.warning {
   color: var(--color-warning);
 }
 
@@ -115,7 +111,7 @@ b{
 // i{
 //   color: var(--color-warning);
 // }
-.card-body{
+.card-body {
   height: 42rem;
   width: 100%;
   overflow-y: auto;
@@ -123,21 +119,20 @@ b{
   scrollbar-width: none;
 }
 .card-body::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
+  display: none; /* Safari and Chrome */
 }
-.containt{
+.containt {
   margin: 2rem;
 }
 
-.card-head{
-
-  .page-header{
+.card-head {
+  .page-header {
     color: var(--color-primary);
     margin-top: 2.5rem;
   }
 }
 .responsive-table {
-    padding-left: 0;
+  padding-left: 0;
   li {
     border-radius: 3px;
     padding: 1rem 2rem;
@@ -146,18 +141,17 @@ b{
     margin-bottom: 25px;
   }
   .table-header {
-    background-color: var( --color-info-light);
+    background-color: var(--color-info-light);
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
     font-weight: 600;
-
   }
   .table-row {
     background-color: #ffffff;
-    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-    &:hover{
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    &:hover {
       background-color: var(--color-background);
     }
   }
@@ -178,8 +172,7 @@ b{
     .table-header {
       display: none;
     }
-    .table-row{
-
+    .table-row {
     }
     li {
       display: block;
@@ -191,7 +184,7 @@ b{
       display: flex;
       padding: 10px 0;
       &:before {
-        color: #6C7A89;
+        color: #6c7a89;
         padding-right: 10px;
         content: attr(data-label);
         flex-basis: 50%;
@@ -200,20 +193,20 @@ b{
     }
   }
 }
-.search-box-div{
+.search-box-div {
   margin-left: 60rem;
   margin-top: 1.5rem;
 }
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
-.table-more{
+.table-more {
   display: flex;
   justify-content: center;
   gap: 2rem;
   font-size: 1rem;
 }
-.table-more-head{
+.table-more-head {
   display: flex;
   justify-content: center;
 }
@@ -230,16 +223,20 @@ b{
 //     // font-family: popins;
 //   }
 // }
-.add-btn{
+.add-btn {
   width: 90%;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 1rem;
 }
-.add-button{
+.add-button {
   font-size: 15px;
   font-weight: 400;
-  &:hover{
-    color:#ffffff
+  &:hover {
+    color: #ffffff;
   }
+}
+
+.required {
+  color: red;
 }

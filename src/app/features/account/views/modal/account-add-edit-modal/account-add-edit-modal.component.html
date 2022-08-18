@@ -1,1 +1,167 @@
-<p>account-add-edit-modal works!</p>
+<div class="modal-content" id="accountModal">
+  <div class="modal-body p-5">
+    <div
+      class="mb-4 d-flex align-items-center position-relative modal-body-header"
+    >
+      <div class="header">
+        <h2 class="title mb-0" id="staticBackdropLabel">Account</h2>
+        <p class="text-muted mb-0">
+          All <span class="required">*</span> fields are mandatory.
+        </p>
+      </div>
+      <!-- <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button> -->
+    </div>
+    <div class="details-cnt" id="account-details">
+      <div class="row cnt-row">
+        <div class="col-12 p-0">
+          <label for="basic" class="header-label">Basic</label>
+          <div class="input-cnt d-flex">
+            <div class="form-group grp-cnt">
+              <label for="name">Name<span class="required">*</span> :</label>
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="form-group grp-cnt">
+              <label for="code">Code<span class="required">*</span> :</label>
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Enter Code"
+              />
+            </div>
+          </div>
+          <div class="input-cnt d-flex">
+            <div class="form-group grp-cnt">
+              <label for="description">Description :</label>
+              <textarea
+                rows="2"
+                cols=""
+                class="form-control form-control-sm"
+                placeholder="Enter Description"
+              ></textarea>
+            </div>
+            <div class="form-group grp-cnt">
+              <label for="taxtType">Taxt Type :</label>
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Enter Text Type"
+              />
+            </div>
+          </div>
+          <div class="input-cnt d-flex">
+            <div class="form-group grp-cnt">
+              <label for="PAN">PAN :</label>
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Enter PAN"
+              />
+            </div>
+            <div class="form-group grp-cnt">
+              <label for="GSTN">GSTN :</label>
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Enter GST Number"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row cnt-row">
+        <div class="col-12 p-0">
+          <label for="contact" class="header-label">Contact</label>
+          <div class="input-cnt d-flex">
+            <div class="form-group grp-cnt grp-ctn-ME">
+              <div class="form-group">
+                <label for="mobile">Mobile :</label>
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  placeholder="Enter Modile"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  placeholder="Enter Email"
+                />
+              </div>
+            </div>
+            <div class="form-group grp-cnt">
+              <label for="address">Address :</label>
+              <textarea
+                rows="2"
+                cols=""
+                class="form-control form-control-sm"
+                placeholder="Enter Address"
+              ></textarea>
+            </div>
+          </div>
+          <div class="input-cnt d-flex">
+            <div class="form-group grp-cnt">
+              <label for="country"
+                >Country<span class="required">*</span> :</label
+              >
+              <!-- <ng-select class="form-select form-select-sm">
+                <ng-option *ngFor="let car of cars" [value]="car.id">{{
+                  car.name
+                }}</ng-option>
+              </ng-select> -->
+              <select
+                class="form-select form-select-sm"
+                aria-label="Default select example"
+              >
+                <option selected disabled>Select country</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="form-group grp-cnt">
+              <label for="state">State<span class="required">*</span> :</label>
+              <select
+                class="form-select form-select-sm"
+                aria-label="Default select example"
+              >
+                <option selected disabled>Select state</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-cnt d-flex">
+            <div class="form-group grp-cnt">
+              <label for="city">City :</label>
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Enter City"
+              />
+            </div>
+            <div class="form-group grp-cnt">
+              <label for="zip">Zip<span class="required">*</span> :</label>
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Enter Zip"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
